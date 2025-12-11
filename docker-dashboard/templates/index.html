@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Docker Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h1>Docker Container Metrics</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Status</th>
+        <th>CPU %</th>
+        <th>Memory Usage</th>
+    </tr>
+    {% for c in containers %}
+    <tr>
+        <td>{{ c.name }}</td>
+        <td>{{ c.status }}</td>
+        <td>{{ c.cpu_percent }}%</td>
+        <td>{{ (c.mem_usage / 1024 / 1024)|round(2) }} MB / {{ (c.mem_limit / 1024 / 1024)|round(2) }} MB</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
