@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <img src="screencap.png" align="right" width="250">
 
 # [play floppy bird](https://nebezb.com/floppybird/)
@@ -49,3 +50,9 @@ The assets powering the visual element of the game have all been extracted direc
 I took this Tweet (https://twitter.com/dongatory/status/431060041009856512 / http://i.imgur.com/AcyWyqf.png) by Dong Nguyen, the creator of the game, as an open invitation to reuse the game concept and assets in an open source project. There is no intention to steal the game, monetize it, or claim it as my own.
 
 If the copyright holder would like for the assets to be removed, please open an issue to start the conversation.
+=======
+Flappy Bird (HTML5)
+=========
+
+I want to try recreating the flappy bird game in HTML5. Let's see how it goes!
+>>>>>>> 38b2e01 (Initial commit)
